@@ -267,7 +267,7 @@ If you use Room Check in research, civic publications, or grant applications:
 
 ```
 Room Check: Open-source indoor air-quality safety translator.
-https://github.com/YOUR-ORG/room-check
+(https://github.com/MWare-7938/Room-Check)
 Originally developed for Montgomery County Library, GridHack 2026.
 ```
 
