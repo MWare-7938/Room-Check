@@ -30,7 +30,10 @@ def test_csv_handles_missing_columns(tmp_path: Path):
 
 def test_csv_with_column_map(tmp_path: Path):
     p = tmp_path / "weird.csv"
-    p.write_text("Time,CO2 (ppm),Temp °F\n2026-04-24T10:00:00,725,71.2\n")
+    p.write_text(
+        "Time,CO2 (ppm),Temp °F\n2026-04-24T10:00:00,725,71.2\n",
+        encoding="utf-8",
+    )
     out = CSVFile(p, column_map={
         "timestamp": "Time",
         "co2_ppm": "CO2 (ppm)",
