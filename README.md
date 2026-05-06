@@ -2,7 +2,7 @@
 
 > **Turn raw indoor air-quality numbers into a clear GREEN, YELLOW, or RED safety call** — backed by published standards (ASHRAE, EPA, OSHA, Sensirion), with plain-language alerts a librarian, parent, or building manager can act on.
 
-[![Tests](https://github.com/YOUR-ORG/room-check/actions/workflows/test.yml/badge.svg)](https://github.com/YOUR-ORG/room-check/actions)
+[![Tests](https://github.com/MWare-7938/Room-Check/actions/workflows/test.yml/badge.svg)](https://github.com/MWare-7938/Room-Check/actions)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Sensors](https://img.shields.io/badge/sensors-Dyson%20%7C%20Inkbird%20%7C%20CSV%20%7C%20HTTP-orange)

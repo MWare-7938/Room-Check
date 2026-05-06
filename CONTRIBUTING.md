@@ -11,7 +11,7 @@ Thanks for considering it. Room Check stays useful because real librarians, teac
 ## Local setup
 
 ```bash
-git clone https://github.com/YOUR-ORG/room-check.git
+git clone https://github.com/MWare-7938/Room-Check.git
 cd room-check
 python -m venv .venv
 source .venv/bin/activate    # Windows: .venv\Scripts\activate

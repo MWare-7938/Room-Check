@@ -38,10 +38,10 @@ all    = ["libdyson-neon>=1.5", "bleak>=0.21", "requests>=2.31", "paho-mqtt>=2.0
 dev    = ["pytest>=7", "pytest-cov", "ruff"]
 
 [project.urls]
-Homepage      = "https://github.com/YOUR-ORG/room-check"
-Repository    = "https://github.com/YOUR-ORG/room-check"
-Issues        = "https://github.com/YOUR-ORG/room-check/issues"
-Documentation = "https://github.com/YOUR-ORG/room-check#readme"
+Homepage      = "https://github.com/MWare-7938/Room-Check"
+Repository    = "https://github.com/MWare-7938/Room-Check"
+Issues        = "https://github.com/MWare-7938/Room-Check/issues"
+Documentation = "https://github.com/MWare-7938/Room-Check#readme"
 
 [project.scripts]
 roomcheck = "roomcheck.cli:main"

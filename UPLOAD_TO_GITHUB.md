@@ -23,7 +23,7 @@ git add .
 git status                  # ← scan for .dyson-auth.json. Should NOT appear.
 git commit -m "Initial release v1.0.0"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/room-check.git
+git remote add origin https://github.com/MWare-7938/Room-Check.git
 git push -u origin main
 ```
 
@@ -98,7 +98,7 @@ On the repo page, click the ⚙ gear next to "About" (top-right).
 - Attach files: drag `room-check-oss-v1.0.0.zip` from `Documents/Orivia/`
 - Click **Publish release**
 
-Anyone can now download the zip from `https://github.com/YOUR-USERNAME/room-check/releases/latest`.
+Anyone can now download the zip from `https://github.com/MWare-7938/Room-Check/releases/latest`.
 
 ### Verify CI ran
 
@@ -159,7 +159,7 @@ git init && git add . && git status
 # verify nothing sensitive
 git commit -m "Initial release v1.0.0"
 git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/room-check.git
+git remote add origin https://github.com/MWare-7938/Room-Check.git
 git push -u origin main
 ```
 
