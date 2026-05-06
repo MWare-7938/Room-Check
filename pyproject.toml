@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "room-check"
+version = "1.0.0"
+description = "Translate raw indoor air-quality readings into easy GREEN/YELLOW/RED safety calls. Open source. Sensor-agnostic."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Orivia Tech / GridHack 2026", email = "hello@orivia.tech" }
+]
+keywords = ["air-quality", "iaq", "co2", "pm25", "voc", "indoor-air", "ashrae", "epa", "building-resilience", "dyson", "inkbird"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Home Automation",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: System :: Monitoring",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dyson  = ["libdyson-neon>=1.5"]
+inkbird-ble = ["bleak>=0.21"]
+http   = ["requests>=2.31"]
+mqtt   = ["paho-mqtt>=2.0"]
+all    = ["libdyson-neon>=1.5", "bleak>=0.21", "requests>=2.31", "paho-mqtt>=2.0"]
+dev    = ["pytest>=7", "pytest-cov", "ruff"]
+
+[project.urls]
+Homepage      = "https://github.com/YOUR-ORG/room-check"
+Repository    = "https://github.com/YOUR-ORG/room-check"
+Issues        = "https://github.com/YOUR-ORG/room-check/issues"
+Documentation = "https://github.com/YOUR-ORG/room-check#readme"
+
+[project.scripts]
+roomcheck = "roomcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
